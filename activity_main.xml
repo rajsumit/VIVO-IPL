@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8E24AA">
+
+        <TextView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vivo IPL 2018"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="50sp"
+            android:textColor="#ffffff"/>
+
+        <ImageButton
+            android:id="@+id/schedule"
+            android:layout_below="@+id/adView"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:src="@drawable/schedule"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="schedule"
+            android:onClick="schedule"/>
+
+        <ImageButton
+            android:id="@+id/live_Score"
+            android:layout_toRightOf="@+id/schedule"
+            android:layout_toEndOf="@+id/schedule"
+            android:layout_below="@+id/adView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/livescore"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="live score"
+            android:onClick="live_score"/>
+
+        <ImageButton
+            android:id="@+id/point_table"
+            android:layout_below="@+id/schedule"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pointtable"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:contentDescription="point table"
+            android:onClick="point_table"/>
+
+        <ImageButton
+            android:id="@+id/team"
+            android:layout_toRightOf="@+id/point_table"
+            android:layout_toEndOf="@+id/point_table"
+            android:layout_below="@+id/live_Score"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/teams"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="teams"
+            android:onClick="teams"/>
+
+        <ImageButton
+            android:id="@+id/news"
+            android:layout_below="@+id/point_table"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@drawable/news"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:contentDescription="news"
+            android:onClick="news"/>
+
+    </RelativeLayout>
+
+</ScrollView>
